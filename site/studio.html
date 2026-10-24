@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CloudPulse Studio</title>
+<meta name="description" content="Build apps from a prompt, generate and edit images, research with citations, track tasks, automate workflows and run an AI agent. Free, private, in your browser.">
+<meta name="theme-color" content="#000000">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self' https://api.groq.com https://generativelanguage.googleapis.com https://en.wikipedia.org; manifest-src 'self'; worker-src 'self'; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap">
+<link rel="stylesheet" href="css/studio.css">
+</head>
+<body>
+<a class="skip" href="#panel">Skip to content</a>
+<div class="app">
+  <aside class="rail" aria-label="Studio">
+    <a class="brand" href="./" aria-label="CloudPulse home"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12h4l2.5-7 4 14 3-9 1.5 2H22"/></svg><span>CloudPulse<i>.ai</i> Studio</span></a>
+    <nav id="nav" aria-label="Tools"></nav>
+    <div class="rail-foot"><div id="cap-badges" class="caps"></div><button class="btn" id="open-agent" type="button">Open agent <kbd>Ctrl J</kbd></button></div>
+  </aside>
+  <main id="panel"></main>
+  <aside id="agent" class="agent" hidden aria-label="Agent"></aside>
+</div>
+<div id="toasts" aria-live="polite"></div>
+<script type="module" src="js/studio/main.js"></script>
+</body>
+</html>

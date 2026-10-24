@@ -1,0 +1,53 @@
+{
+  "name": "CloudPulse Studio",
+  "short_name": "Studio",
+  "description": "Build apps, generate and edit images, research, track tasks, automate and run an AI agent.",
+  "id": "./studio.html",
+  "start_url": "./studio.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "categories": [
+    "productivity",
+    "developer tools"
+  ],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Build an app",
+      "url": "./studio.html#build"
+    },
+    {
+      "name": "Images",
+      "url": "./studio.html#image"
+    },
+    {
+      "name": "Research",
+      "url": "./studio.html#research"
+    },
+    {
+      "name": "Tasks",
+      "url": "./studio.html#tasks"
+    }
+  ]
+}
